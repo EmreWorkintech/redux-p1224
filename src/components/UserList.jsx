@@ -36,7 +36,7 @@ function UserList() {
   if (error) return <p>{error}</p>;
   return (
     <div className="flex-grow">
-      <h1 className="font-bold text-2xl">Oyuncular</h1>
+      <h1 className="font-bold text-2xl">Oyuncu Listesi</h1>
       {users.map((user) => (
         <User user={user} key={user.id} />
       ))}
